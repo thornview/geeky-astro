@@ -43,7 +43,7 @@ const totalPages = Math.ceil(sortedPosts.length / pagination);
       <h1
         class="h2 mb-8 text-center"
         set:html={markdownify(postIndex.data.title || "")}
-      />
+      ></h1>
       <div class="row mb-16">
         {
           currentPosts.map((post) => (

@@ -47,10 +47,10 @@ const featuredPosts = posts.filter((post) => post.data.featured);
             ? "mt-12 text-center lg:mt-0 lg:text-left lg:col-6"
             : "mt-12 text-center lg:mt-0 lg:text-left lg:col-12"}>
           <div class="banner-title">
-            <h1 set:html={markdownify(banner.title)} />
-            <span set:html={markdownify(banner.title_small)} />
+            <h1 set:html={markdownify(banner.title)}></h1>
+            <span set:html={markdownify(banner.title_small)}></span>
           </div>
-          <p class="mt-4" set:html={markdownify(banner.content)} />
+          <p class="mt-4" set:html={markdownify(banner.content)}></p>
           {
             banner.button.enable && (
               <a class="btn btn-primary lg:mb-0 my-6" href={banner.button.link}>
@@ -90,7 +90,7 @@ const featuredPosts = posts.filter((post) => post.data.featured);
                 <h2
                   class="section-title"
                   set:html={markdownify(featured_posts.title)}
-                />
+                ></h2>
                 <div class="rounded border border-border p-6 dark:border-darkmode-border">
                   <div class="row">
                     <div class="md:col-6">
@@ -165,7 +165,7 @@ const featuredPosts = posts.filter((post) => post.data.featured);
                 <h2
                   class="section-title"
                   set:html={markdownify(recent_posts.title)}
-                />
+                ></h2>
                 <div class="rounded border border-border px-6 pt-6 dark:border-darkmode-border">
                   <div class="row">
                     {sortedPost.slice(0, pagination).map((post) => (

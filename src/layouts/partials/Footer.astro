@@ -29,7 +29,7 @@ const { copyright, footer_content } = config.params;
     <p
       class="max-w-159.5 text-balance mx-auto"
       set:html={markdownify(footer_content)}
-    />
+    ></p>
 
     {/* footer menu */}
     <ul class="mb-12 mt-6 flex-wrap space-x-2 lg:space-x-4">
@@ -55,6 +55,6 @@ const { copyright, footer_content } = config.params;
     <p
       set:html={markdownify(copyright)}
       class="[&>a]:underline decoration-wavy"
-    />
+    ></p>
   </div>
 </footer>

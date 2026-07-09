@@ -32,7 +32,7 @@ const { title, image, education, experience, description, meta_title } =
       <h1
         class="h1 text-left lg:text-[55px] mt-12"
         set:html={markdownify(title || "")}
-      />
+      ></h1>
 
       <div class="content text-left">
         <Content />
@@ -45,7 +45,7 @@ const { title, image, education, experience, description, meta_title } =
             <h2
               class="section-title mb-12"
               set:html={markdownify(education.title || "")}
-            />
+            ></h2>
 
             <div class="row">
               {
@@ -67,12 +67,12 @@ const { title, image, education, experience, description, meta_title } =
             <h2
               class="section-title mb-12"
               set:html={markdownify(experience.title || "")}
-            />
+            ></h2>
             <ul class="row">
               {
                 experience?.list?.map((item) => (
                   <li class="mb-5 text-lg font-bold text-text-dark dark:text-darkmode-text-light lg:col-6">
-                    <span set:html={markdownify(item)} />
+                    <span set:html={markdownify(item)}></span>
                   </li>
                 ))
               }
